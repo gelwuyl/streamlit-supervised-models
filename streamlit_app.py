@@ -3,8 +3,6 @@
 Run locally:  streamlit run streamlit_app.py
 Reuses the SAME src/ logic as the notebook, so results match exactly.
 """
-from tkinter import N
-
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -29,7 +27,7 @@ if page == "Regularization":
         "\n""- Compare the performance (Mean Squared Error) of `LinearRegression`, `Ridge`, and `Lasso` models."
         "\n""- Tune the `alpha` parameter for `Ridge` and `Lasso` using `GridSearchCV` with cross-validation to find the optimal regularization strength."
         "\n"
-        "```python"
+        "```python\n"
         "from sklearn.datasets import load_diabetes\n"
         "\n"
         "# Load the diabetes dataset\n"
