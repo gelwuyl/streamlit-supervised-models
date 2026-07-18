@@ -1,4 +1,4 @@
-# ML Playground — NTU APC Supervised Learning (Advanced)
+# su-ntu-ctp/5m-data-3.4-supervised-learning-advanced - assignment
 
 Notebook (graded deliverable) + interactive Streamlit playground for the regularization & ensemble assignment. Both share the same `src/` engine, so the numbers always match.
 
@@ -14,10 +14,7 @@ streamlit run streamlit_app.py
 ```
 
 ## Deploy (later — not required to validate)
-Push to a new GitHub repo, then create a New app on Streamlit Community Cloud
-pointing at `streamlit_app.py`.
+Push to a new GitHub repo, then create a New app on Streamlit Community Cloud pointing at `streamlit_app.py`.
 
 ## Credits
 - scikit-learn (`diabetes`, `breast_cancer` datasets)
-- NTU PACE course notebooks `su-ntu-ctp/5m-data-3.4-supervised-learning-advanced`
-- scikit-learn user guide on `GridSearchCV`
