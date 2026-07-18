@@ -1,6 +1,4 @@
-# su-ntu-ctp/5m-data-3.4-supervised-learning-advanced - assignment
-
-Notebook (graded deliverable) + interactive Streamlit playground for the regularization & ensemble assignment. Both share the same `src/` engine, so the numbers always match.
+Streamlit playground for the regularization & ensemble assignment. Both share the same `src/` engine, so the numbers always match.
 
 ## Run the notebook (validate the assignment first)
 1. `pip install -r requirements.txt`
