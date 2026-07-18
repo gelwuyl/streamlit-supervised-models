@@ -1,8 +1,6 @@
 # ML Playground — NTU APC Supervised Learning (Advanced)
 
-Notebook (graded deliverable) + interactive Streamlit playground for the
-regularization & ensemble assignment. Both share the same `src/` engine, so
-the numbers always match.
+Notebook (graded deliverable) + interactive Streamlit playground for the regularization & ensemble assignment. Both share the same `src/` engine, so the numbers always match.
 
 ## Run the notebook (validate the assignment first)
 1. `pip install -r requirements.txt`

@@ -88,10 +88,12 @@ else:
         "- Use the `breast_cancer` dataset from `sklearn.datasets`.\n"
         "- Compare the performance (F1 Score and AUC) of `DecisionTreeClassifier`, `RandomForestClassifier` and `GradientBoostingClassifier`.\n"
         "- Tune the hyperparameters of each classifier using `GridSearchCV` with cross-validation.\n"
-        "```python" \
-        "from sklearn.datasets import load_breast_cancer\n" \
-        "# Load the breast cancer dataset\n" \
-        "breast_cancer = load_breast_cancer()\n" \
+        "\n"
+        "```python\n"
+        "from sklearn.datasets import load_breast_cancer\n"
+        "\n"
+        "# Load the breast cancer dataset\n"
+        "breast_cancer = load_breast_cancer()\n"
         "```")
     st.markdown("Pick a classifier and tweak its hyperparameters; F1, AUC and the ROC curve update live.")
 
