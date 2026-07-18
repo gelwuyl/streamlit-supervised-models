@@ -21,6 +21,18 @@ page = st.sidebar.radio("Choose a part", ["Regularization", "Ensemble Methods"])
 # ---------------- Regularization page ----------------
 if page == "Regularization":
     st.title("Part 1 — Regularization (diabetes)")
+    st.markdown(
+        "**Regularization**\n"
+        "- Use the `diabetes` dataset from `sklearn.datasets`.
+        "- Compare the performance (Mean Squared Error) of `LinearRegression`, `Ridge`, and `Lasso` models.
+        "- Tune the `alpha` parameter for `Ridge` and `Lasso` using `GridSearchCV` with cross-validation to find the optimal regularization strength.\n\n"
+        "```python\n"
+        "from sklearn.datasets import load_diabetes\n"
+        "\n"
+        "# Load the diabetes dataset\n"
+        "diabetes = load_diabetes()\n"
+        "```"
+    )
     st.markdown("Pick a model and an `alpha`, and watch the test MSE and coefficient paths update live.")
 
     @st.cache_resource
@@ -70,6 +82,16 @@ if page == "Regularization":
 # ---------------- Ensemble page ----------------
 else:
     st.title("Part 2 — Ensemble Methods (breast_cancer)")
+    st.markdown(
+        "**Ensemble Methods**:"
+        "- Use the `breast_cancer` dataset from `sklearn.datasets`."
+        "- Compare the performance (F1 Score and AUC) of `DecisionTreeClassifier`, `RandomForestClassifier` and `GradientBoostingClassifier`."
+        "- Tune the hyperparameters of each classifier using `GridSearchCV` with cross-validation." \
+        "```python" \
+        "from sklearn.datasets import load_breast_cancer" \
+        "# Load the breast cancer dataset" \
+        "breast_cancer = load_breast_cancer()" \
+        "```")
     st.markdown("Pick a classifier and tweak its hyperparameters; F1, AUC and the ROC curve update live.")
 
     @st.cache_resource
