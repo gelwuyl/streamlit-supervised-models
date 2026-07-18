@@ -23,8 +23,8 @@ if page == "Regularization":
     st.title("Part 1 — Regularization (diabetes)")
     st.markdown(
         "**Regularization**\n"
-        "- Use the `diabetes` dataset from `sklearn.datasets`.
-        "- Compare the performance (Mean Squared Error) of `LinearRegression`, `Ridge`, and `Lasso` models.
+        "- Use the `diabetes` dataset from `sklearn.datasets`."
+        "- Compare the performance (Mean Squared Error) of `LinearRegression`, `Ridge`, and `Lasso` models."
         "- Tune the `alpha` parameter for `Ridge` and `Lasso` using `GridSearchCV` with cross-validation to find the optimal regularization strength.\n\n"
         "```python\n"
         "from sklearn.datasets import load_diabetes\n"
