@@ -3,6 +3,8 @@
 Run locally:  streamlit run streamlit_app.py
 Reuses the SAME src/ logic as the notebook, so results match exactly.
 """
+from tkinter import N
+
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -22,11 +24,12 @@ page = st.sidebar.radio("Choose a part", ["Regularization", "Ensemble Methods"])
 if page == "Regularization":
     st.title("Part 1 — Regularization (diabetes)")
     st.markdown(
-        "**Regularization**\n"
-        "- Use the `diabetes` dataset from `sklearn.datasets`."
-        "- Compare the performance (Mean Squared Error) of `LinearRegression`, `Ridge`, and `Lasso` models."
-        "- Tune the `alpha` parameter for `Ridge` and `Lasso` using `GridSearchCV` with cross-validation to find the optimal regularization strength.\n\n"
-        "```python\n"
+        "**Regularization**"
+        "\n""- Use the `diabetes` dataset from `sklearn.datasets`."
+        "\n""- Compare the performance (Mean Squared Error) of `LinearRegression`, `Ridge`, and `Lasso` models."
+        "\n""- Tune the `alpha` parameter for `Ridge` and `Lasso` using `GridSearchCV` with cross-validation to find the optimal regularization strength."
+        "\n"
+        "```python"
         "from sklearn.datasets import load_diabetes\n"
         "\n"
         "# Load the diabetes dataset\n"
@@ -83,14 +86,14 @@ if page == "Regularization":
 else:
     st.title("Part 2 — Ensemble Methods (breast_cancer)")
     st.markdown(
-        "**Ensemble Methods**:"
-        "- Use the `breast_cancer` dataset from `sklearn.datasets`."
-        "- Compare the performance (F1 Score and AUC) of `DecisionTreeClassifier`, `RandomForestClassifier` and `GradientBoostingClassifier`."
-        "- Tune the hyperparameters of each classifier using `GridSearchCV` with cross-validation." \
+        "**Ensemble Methods**:\n"
+        "- Use the `breast_cancer` dataset from `sklearn.datasets`.\n"
+        "- Compare the performance (F1 Score and AUC) of `DecisionTreeClassifier`, `RandomForestClassifier` and `GradientBoostingClassifier`.\n"
+        "- Tune the hyperparameters of each classifier using `GridSearchCV` with cross-validation.\n"
         "```python" \
-        "from sklearn.datasets import load_breast_cancer" \
-        "# Load the breast cancer dataset" \
-        "breast_cancer = load_breast_cancer()" \
+        "from sklearn.datasets import load_breast_cancer\n" \
+        "# Load the breast cancer dataset\n" \
+        "breast_cancer = load_breast_cancer()\n" \
         "```")
     st.markdown("Pick a classifier and tweak its hyperparameters; F1, AUC and the ROC curve update live.")
 
